@@ -6,12 +6,48 @@
 ## 2. Функционалности към самия проект
 
 ### № 1 CRUD Операций с:
-- Менюто с пиците.
-  - End-point: `/pizza`
-- Менюто с топингите.
-  - End-point: `/toppings`
+- Менюто с пиците:
+
+  - Лист от пиците(пица меню).
+  - End-point: `GET /pizza/list-pizzas`
+ 
+  - Добавяне на пица.
+  - End-point: `POST /pizza/add-new-pizza/`
+
+  - Обновяване на пица.
+  - End-point: `PUT /pizza/update-pizza/{pizza_id}`
+  
+  - Изтриване на пица.
+  - End-point: `DELETE /pizza/remove-pizza/{pizza_id}`
+    
+- Менюто с топингите:
+
+  - Лист от топинги(топинг меню).
+  - End-point: `GET /topping/list-toppings`
+ 
+  - Добавяне на топинг.
+  - End-point: `POST /toppings/add-new-topping/`
+
+  - Обновяване на топинг.
+  - End-point: `PUT /toppings/update-topping/{topping_id}`
+  
+  - Изтриване на топинг.
+  - End-point: `DELETE /toppings/remove-topping/{topping_id}`
+
 - Менюто с напитки.
-  - End-point: `/drinks`
+ 
+  - Лист от напитки(напитка меню).
+  - End-point: `GET /drink/list-drink`
+ 
+  - Добавяне на напитка.
+  - End-point: `POST /drink/add-new-topping/`
+
+  - Обновяване на напитка.
+  - End-point: `PUT /drink/update-drink/{drink_id}`
+  
+  - Изтриване на напитка.
+  - End-point: `DELETE /drink/remove-drink/{drink_id}`
+    
 - Потребителите (User, Delivere, Admin).
   - End-point: `/role`
 - Местоположение на пицариите.
@@ -30,7 +66,7 @@
   - Идентификатора на потребителя;
   - Поръчката на човека;
   - Информация за разплащане;
-  - End-point: `POST /orders/create`
+- End-point: `POST /orders/create`
 
 #### № 3.1 Премахване на поръчка
 - Премахване на поръчката в случай, в който поръчката не е потвърден в даден период от време (3 минути);
